@@ -79,7 +79,7 @@ if __name__ == '__main__':
     if not args.sid:
         args.sid = ConvertSidToStringSid(LookupAccountName(GetComputerName(), GetUserName())[0])
     if not args.key:
-        # args.path = os.path.join(os.environ["USERPROFILE"], r"Documents\NetSarang Computer\6")
+        # args.key = os.path.join(os.environ["USERPROFILE"], r"Documents\NetSarang Computer\6")
         args.key = os.path.join(os.environ["USERPROFILE"], r"Documents\NetSarang\Xshell\Sessions")
 
     if not os.path.isdir(args.key):

@@ -168,19 +168,19 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description="xsh, xfp password decrypt")
     group = parser.add_mutually_exclusive_group(required=False)
     group.add_argument("-e", "--encrypt", default=False,
-                       help="encrypt password", action="store_true")
+                       help="<-e | -d> encrypt password, default -d", action="store_true")
     group.add_argument("-d", "--decrypt", default=True,
-                       help="decrypt encrypted password", action="store_true")
+                       help="<-e | -d> decrypt encrypted password, default -d", action="store_true")
     parser.add_argument("-f", "--ftp", default=False,
-                        help="it is xftp, or xshell.", action="store_true")
+                        help="xftp or xshell. Ignore if it is xshell", action="store_true")
     parser.add_argument("-u", "--username", default="", type=str,
-                        help="user `whoami /user` in command.")
+                        help="user `whoami /user` in command. Ignore if it is local. Used by version >= 5.1")
     parser.add_argument("-m", "--master_pwd", default="", type=str,
-                        help="user's master password.")
+                        help="user\'s master password. Used by version >= 6")
     parser.add_argument("-s", "--sid", default="", type=str,
-                        help="SID `whoami /user` in command.")
+                        help="SID `whoami /user` in command. Ignore if it is local. Used by version >= 5.1")
     parser.add_argument("-v", "--version", default="", type=str,
-                        help="xsh or xfp version")
+                        help="xsh or xfp version. If not specified, 5.2 will be used.")
     parser.add_argument("-k", "--key", default="", nargs='?',
                         help="the path of sessions directory or file of xsh or xfp, or password or other key")
 

@@ -58,7 +58,6 @@ def encrypt_string(password_string, need_return=False):
         return en_password
     else:
         print('%-20s : %s' % ('Version', VERSION))
-        print('%-20s : %s' % ('UserName', USERNAME))
         print('%-20s : %s' % ('Password', password_string))
         print('%-20s : %s' % ('Encrypted Password', en_password))
 
@@ -84,7 +83,6 @@ def decrypt_string(password_string, need_return=False):
             return de_password
         else:
             print('%-20s : %s' % ('Version', VERSION))
-            print('%-20s : %s' % ('UserName', USERNAME))
             print('%-20s : %s' % ('Password', password_string))
             print('%-20s : %s' % ('Decrypted Password', de_password))
 

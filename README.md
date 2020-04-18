@@ -1,12 +1,12 @@
 # xmanager_decrypt
 supported xmanage 5.1, 5.2 and 6
 
-##1. First
+## 1. First
 Make sure that you have installed Python >= 3.7.
 
 Make sure that you have installed pypiwin32, pycryptodome module.
 
-##2. Help
+## 2. Help
 ```
 $ python decrypt.py -h
 
@@ -36,8 +36,8 @@ optional arguments:
 
 ```
 
-##3. Usage
-###3.1 if xmanage is used by local machine and current user
+## 3. Usage
+### 3.1 if xmanage is used by local machine and current user
 
 if it's version is 5.2, run it simply as below
 ```

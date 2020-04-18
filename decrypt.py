@@ -87,7 +87,7 @@ def decrypt_string(password_string, need_return=False):
             print('%-20s : %s' % ('Decrypted Password', de_password))
 
     except Exception as e:
-        print(f"Password is invalid")
+        print("Password is invalid")
 
 def decrypt_file(filepath: str = ''):
     if not os.path.isfile(filepath):
